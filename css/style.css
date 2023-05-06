@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,700;1,800&family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/* RESET */
+
+/*--------------- RESET ---------------*/
+
 
 * {
     margin: 0;
@@ -19,7 +21,9 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER */
+
+/*--------------- HEADER --------------- */
+
 
 .header {
     background-image: url(../img/bg.svg);
@@ -38,6 +42,45 @@ body {
         color:#ffb40b;
         text-align: center;
 }
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 85px;
+    color: #dcdde2;
+    margin-bottom: 20px;
+}
+
+.header-txt span{
+    font-size: 90px;
+    color: #ff8408;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #dcdde2;
+    margin-bottom: 30px;
+}
+
+.header-img{
+    width: 50%;
+    padding: 10px;
+}
+
+.header-img img{
+    width: 550px;
+}
+
+
+/*--------------- MENU NAVBAR --------------- */
+
 
 .menu {
     position: absolute;
@@ -87,42 +130,9 @@ body {
     display: none;
 }
 
-.header-content {
-    display: flex;
-}
 
-.header-txt {
-    width: 50%;
-}
+/*--------------- MAIN ---------------*/
 
-.header-txt h1 {
-    font-size: 70px;
-    line-height: 85px;
-    color: #dcdde2;
-    margin-bottom: 20px;
-}
-
-.header-txt span{
-    font-size: 90px;
-    color: #ff8408;
-}
-
-.header-txt p{
-    font-size: 16px;
-    color: #dcdde2;
-    margin-bottom: 30px;
-}
-
-.header-img{
-    width: 50%;
-    padding: 10px;
-}
-
-.header-img img{
-    width: 550px;
-}
-
-/* MAIN */
 
 .buttons{
     display: flex;
@@ -143,7 +153,6 @@ body {
     background-color: #ff8408;
     color: #dcdde2;
 }
-
 
 .menu-pl {
     padding: 0 0 100px o;
@@ -277,7 +286,8 @@ span{
     margin-bottom: 35px;
 }
 
-/* MAIN PAGE LO QUE HACEMOS */
+
+/* MAIN PAGE "LO QUE HACEMOS" */
 
 
 .main-hacemos{
@@ -292,7 +302,6 @@ span{
     padding: .8em 0 .4em;
 }
 
-
 .gallery{
     padding-bottom: 3em;
     padding-top: 1em;
@@ -305,8 +314,6 @@ span{
     "gal5 gal5 gal6 gal7"
     "gal5 gal5 gal8 gal8";
     gap: 5px;
-
-
 }
 
 .gallery__picture{
@@ -370,8 +377,7 @@ span{
 }
 
 
-
-/* FORMULARIO*/
+/*--------------- FORMULARIO ---------------*/
 
 
 .container {
@@ -410,7 +416,6 @@ ul {
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr ;
-
 }
 
 .contact-form form label {
@@ -453,7 +458,10 @@ ul {
     outline: 0;
 }
 
-/* CONTACT INFO */
+
+/*--------------- CONTACT INFO ---------------*/
+
+
 .contact-info {
     background:#969696;
 }
@@ -462,7 +470,6 @@ ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
-
 
 .fixed {
     position: fixed;
@@ -474,13 +481,13 @@ ul {
     width: 80%;
 }
 
-/* FOOTER */
+
+/*--------------- FOOTER ---------------*/
 
 
 a {
     text-decoration: none;
 }
-
 
 i {
     font-size: 19px;
@@ -518,10 +525,17 @@ i {
     color: #ff8408;
 }
 
-/* MEDIA QUERY */
 
-@media screen and (max-width:1160px) {    
-    .menu {
+
+
+/*--------------- MEDIA QUERY 1160px---------------*/
+
+
+
+
+@media screen and (max-width:1160px) { 
+
+.menu {
     padding: 30px;
 }
 .menu label {
@@ -644,6 +658,10 @@ i {
     text-align: center;
 }
 
+
+/*--------------- FORMULARIO ---------------*/
+
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -657,6 +675,10 @@ i {
     text-align: left;
 }
 
+
+/*--------------- FOOTER ---------------*/
+
+
 .footer {
     padding: 30px;
     text-align: center;
@@ -669,7 +691,14 @@ i {
 
 
 
-@media screen and (max-width:630px) {    
+
+/*--------------- MEDIA QUERY 630px---------------*/
+
+
+
+
+@media screen and (max-width:630px) {   
+
 .menu {
     padding: 30px;
 }
@@ -795,6 +824,10 @@ i {
     text-align: center;
 }
 
+
+/*--------------- PAGE "LO QUE HACEMOS"---------------*/
+
+
 .title-hacemos{
     font-size: 2rem;
     padding: 8.rem 0 .4em;
@@ -819,7 +852,6 @@ i {
     font-size: 1rem;
 }
 
-
 .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr ;
@@ -832,8 +864,6 @@ i {
 .contact-info p {
     text-align: left;
 }
-}
-
 
 .footer {
     padding: 30px;
@@ -844,3 +874,4 @@ i {
     flex-direction: column;
 } 
 
+}
