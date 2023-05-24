@@ -1,0 +1,49 @@
+//* PALETA DE COLORES
+$color-principal: #ff8408;
+$color-secundario: #ffb408;
+$color-terciario: #dcdde2;
+
+//* LISTAS
+$colores:
+red,
+grey,
+black,
+tomato,
+pink,
+darkgrey;
+
+$font-size:
+12px,
+14px,
+16px,
+20px,
+50px,
+70px;
+
+//*EXTENDS
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%inline-block{
+    display: inline-block;
+    padding: 7px 15px;
+}
+%contact-info{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+//*MIXINS
+
+@mixin flex ($flex, $align){
+    display: $flex;
+    align-items: $align;
+
+}
+@mixin flex-2 ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}

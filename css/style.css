@@ -129,6 +129,12 @@ body {
     cursor: pointer;
     display: none;
 }
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
 
 
 /*--------------- MAIN ---------------*/
@@ -287,7 +293,7 @@ span{
 }
 
 
-/* MAIN PAGE "LO QUE HACEMOS" */
+/*--------------- MAIN PAGE "LO QUE HACEMOS"--------------- */
 
 
 .main-hacemos{
@@ -316,13 +322,13 @@ span{
     gap: 5px;
 }
 
-.gallery__picture{
+.gallery-picture{
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
 
-.gallery__picture::before{
+.gallery-picture::before{
     content: "-FOODELUX-";
     position: absolute;
     top: 0;
@@ -339,37 +345,37 @@ span{
     font-size: 1.5rem;
 }
 
-.gallery__picture:hover::before{
+.gallery-picture:hover::before{
     transform: scaleY(1) ;
 }
 
-.gallery__picture--g1{
+.gallery-picture--g1{
     grid-area: gal1;
 }
-.gallery__picture--g2{
+.gallery-picture--g2{
     grid-area: gal2;
 }
-.gallery__picture--g3{
+.gallery-picture--g3{
     grid-area: gal3;
 }
-.gallery__picture--g4{
+.gallery-picture--g4{
     grid-area: gal4;
 }
-.gallery__picture--g5{
+.gallery-picture--g5{
     grid-area: gal5;
 }
-.gallery__picture--g6{
+.gallery-picture--g6{
     grid-area: gal6;
 }
-.gallery__picture--g7{
+.gallery-picture--g7{
     grid-area: gal7;
 }
 
-.gallery__picture--g8{
+.gallery-picture--g8{
     grid-area: gal8;
 }
 
-.gallery__img{
+.gallery-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -380,12 +386,6 @@ span{
 /*--------------- FORMULARIO ---------------*/
 
 
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
 
 ul {
     list-style: none;
@@ -659,7 +659,7 @@ i {
 }
 
 
-/*--------------- FORMULARIO ---------------*/
+/*--------------- MEDIA QUERY 1160px FORMULARIO ---------------*/
 
 
 .contact-wrapper {
@@ -676,7 +676,7 @@ i {
 }
 
 
-/*--------------- FOOTER ---------------*/
+/*--------------- MEDIA QUERY 1160px FOOTER ---------------*/
 
 
 .footer {

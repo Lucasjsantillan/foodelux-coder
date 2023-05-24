@@ -1,0 +1,33 @@
+.footer {
+    padding: 50px 0;
+    background-color: #292933;
+    .footer-content {
+        display: flex;
+        width: 60%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $color-terciario;
+    }
+    .link a {
+        font-size: nth($font-size, 3);
+        color: nth($colores, 6);
+        display: block;
+        margin-bottom: 10px;
+        &:hover{
+            color: $color-principal;
+        }
+    }
+}
+.titulo-final{
+    text-align: center;
+    font-size: nth($font-size, 2);
+    color: nth($colores, 2);
+    margin: 20px 0 0 0;
+}
+i {
+    font-size: 19px; }
+
+
+
+

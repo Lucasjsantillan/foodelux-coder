@@ -1,0 +1,110 @@
+.textos-header {
+    font-size: 25px;
+    font-weight: 200;
+    color:$color-secundario;
+    text-align: center;
+    
+}
+.header{
+    background-image: url(../img/bg.svg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex (flex, center);
+    min-height: 70vh;
+    padding: 80px 0 0 0;
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @extend %flex;
+        .logo {
+            color:$color-principal;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        #menu{
+            display: none;
+            
+        }
+        .navbar{
+            ul{
+                list-style: none;
+                padding: 0;
+                }
+                li{
+                    position: relative;
+                    float: left;
+                    a{
+                        padding: 20px;
+                        font-size: nth($font-size, 3);
+                        color: nth($colores, 6);
+                        display: block;
+                        font-weight: 600;
+                        &:hover{
+                            color:$color-principal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    label{
+        cursor: pointer;
+        display: none;
+        .menu-icono{
+            width: 25px;
+        }
+    }
+    .header-content{
+        display: flex;
+        .header-txt{
+            width: 50%;
+            
+            h1{
+                line-height: 85px;
+                margin-bottom: 20px;
+                font-size: nth($font-size, 6);
+                color: nth($colores, 6);
+                span{
+                    font-size: 90px;
+                    color: $color-principal;
+                }
+            }
+            p{
+                font-size: nth($font-size, 3);
+                color: nth($colores, 6);
+                margin-bottom: 30px;
+            }
+            .buttons{
+                display: flex;
+                .btn-1{
+                    display: inline-block;
+                    padding: 13px 20px;
+                    border: 1px solid $color-secundario;
+                    color: $color-secundario;
+                    border-radius: 15px;
+                    margin-right: 30px;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    &:hover{
+                        background-color: $color-principal;
+                        color: $color-terciario;
+                    }
+                }
+                
+            }
+            .header-img{
+                width: 50%;
+                padding: 10px;
+                img{
+                    width: 550px;
+                }
+            }
+        }
+    }
+
+/*--------------- HEADER PAGE "NOSOTROS"--------------- */
+
