@@ -107,7 +107,7 @@
     }
     .info-txt{
         width: 50%;
-        padding-left: 55px;
+        padding-left: 10%;
         h2{
             font-size: nth($font-size, 5);
             color: nth($colores, 6);
@@ -233,6 +233,7 @@
         font-size: 3em;
         span{
             color:$color-principal;
+            display: list-item;
         }
     }
     .contact-wrapper{
@@ -294,7 +295,7 @@
     }
 }
 .contact-info{
-    background:#969696;
+    background:#cecece;
     h4{
         @extend %contact-info;
     }
